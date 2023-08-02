@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times', serif;
+    background: #000;
+    color: white;
+}
+
+h1,
+h2 {
+    margin: 15px auto;
+    font-weight: normal;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+img{
+    width: 100%;
+}
+
+.bio-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    width: 29%;
+}
+
+.bio-section h1 {
+    align-self: self-start;
+    margin: 40px 0;
+    font-size: 50px;
+}
+
+.info {
+    font-size: 20px;
+}
+
+hr {
+    border-top: 1px solid gray;
+    /* height: 10px; */
+    width: 40rem;
+    margin: 50px auto;
+}
+
+.footer {
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+.footer a{
+    color: cornflowerblue;
+}
+
+@media screen and (max-width:768px) {
+
+    .img-container{
+        padding: 1rem;
+    }
+
+    .bio-section{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    hr{
+        width: 22rem;
+    }
+
+}
+@media screen and (width:280px){
+    hr{
+        width: 15rem;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1368px) {
+    .bio-section{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (width:1024px) {
+    .container{
+        min-height: 90vh;
+    }
+}
